@@ -10,12 +10,11 @@ def split_before_each_uppercases(formula):
         if formula[end].isupper():
             elements_lst.append(formula[start:end])
             start = end
-            end+=1  
-        
+        end += 1 
+    
     elements_lst.append(formula[start:])
     
     return elements_lst
-
 
 def split_at_first_digit(formula):
     for char_index, char in enumerate(formula):
